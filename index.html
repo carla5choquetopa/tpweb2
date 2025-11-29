@@ -1,0 +1,310 @@
+<!-- TPWEB#2 -->
+<!-- Valentina Carancini, Carla Choquetopa, Comisión 3 -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="miestilo.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="py-md-5 py-sm-5 text-center" style="font-family: 'Beardsons'; font-size: 55px; color: #a6d6e2;">Ojos De
+      Piedra</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- Sección Inicio -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Inicio">INICIO</a>
+            </li>
+            <!-- Sección Aventura Gráfica -->
+            <li class="nav-item">
+              <a class="nav-link" href="#Aventura Gráfica">AVENTURA GRÁFICA </a>
+            </li>
+            <!-- Sección Juego -->
+            <li class="nav-item">
+              <a class="nav-link" href="#Juego">JUEGO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row" id="Inicio">
+      <div class="col-md-6 col-sm-10 g-5" style="font-family: 'CreditValley';">
+        <h4>EL MITO DE MEDUSA</h4>
+        <p>Medusa era una gorgona de enorme belleza, pero la única mortal entre sus hermanas, Esteno y Euríale. Poseía
+          un poder temible: cualquiera que la mirara a los ojos se convertía en piedra.
+          Poseidón se enamoró de ella y la citó en el templo de Atenea. La diosa, furiosa por el uso indebido de su
+          templo, culpó a Medusa y la castigó transformándole el cabello en serpientes venenosas, quitándole así su
+          belleza. Desde entonces, Medusa se escondió en una cueva junto a sus hermanas. </p>
+        <p>Años después, Perseo, hijo de Zeus, recibió la misión de matarla. Para lograrlo, los dioses le dieron varios
+          objetos mágicos: sandalias aladas, un casco de invisibilidad, una hoz afilada, un escudo-espejo y un zurrón
+          encantado.
+          Perseo encontró a Medusa en África mientras dormía. Sin mirarla directamente, usando el reflejo del escudo, y
+          volando para no hacer ruido, le cortó la cabeza de un solo golpe y la guardó en el zurrón. Escapó gracias al
+          casco de invisibilidad.
+          De la sangre de Medusa nacieron corales en el mar Rojo y víboras en el desierto del Sahara. Perseo llevó la
+          cabeza a Atenea, quien la colocó en su escudo para convertir en piedra a cualquiera que la atacara..</p>
+      </div>
+      <div class="col-md-6 col-sm-2 g-5">
+        <img src="img/imagen_00.jpg" alt="sdas" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="row" id="Aventura Gráfica">
+      <div class="col-md-8 col-sm-12 g-4">
+        <div class="card">
+          <img src="img/imagen_09.jpg" class="card-img-top" alt="aventura gra">
+          <div class="card-body">
+            <h2 class="card-title">aventura grafica</h2>
+            <p class="card-text">
+              Una aventura gráfica de exploración y decisiones donde el jugador
+              controla a un arqueólogo urbano que investiga desapariciones en el misterioso bosque Greystone. Los
+              rumores hablan de un templo maldito y de personas que entran al bosque y nunca vuelven.
+              Al internarse entre la vegetación oscura, el arqueólogo encuentra un templo abandonado y, frente a él, un
+              inquietante jardín lleno de estatuas humanas congeladas en expresiones de horror. Allí el jugador debe
+              decidir si examina estas figuras o si avanza sin detenerse, iniciando así diferentes rutas.</p>
+
+            <p>Cada elección altera el rumbo de la historia y revela nuevas pistas sobre el secreto que habita en
+              Greystone. El diseño del juego invita a rejugarlo para descubrir todos los caminos y finales posibles,
+              convirtiendo la experiencia en un viaje donde cada decisión define el destino del protagonista.</p>
+
+            <!-- BOTÓN IR A -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAventura">
+              Ir a la Aventura Gráfica
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalAventura" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">AVENTURA GRÁFICA</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- AVENTURA GRÁFICA -->
+                    <iframe id="iframeAventura" src="aventura-grafica/index.html" frameborder="0" width="100%"
+                      height="100%"></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- DIAGRAMA DE FLUJO -->
+      <div class="col-md-4 col-sm-12 g-4">
+        <div class="card">
+          <img src="img/imagen_11.jpg" class="card-img-top" alt="diagrama">
+          <div class="card-body">
+            <h5 class="card-title">diagrama de flujo</h5>
+            <p class="card-text">El diagrama muestra el camino que sigue el jugador y cómo cada decisión cambia la
+              historia. Desde que el arqueólogo llega al templo, el esquema indica las rutas posibles, las elecciones
+              que debe tomar y los distintos finales que puede obtener
+            </p>
+
+            <!-- Ir al diagrama -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDiagrama">
+              Ver
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalDiagrama" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">DIAGRAMA DE FLUJO</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- AVENTURA GRÁFICA -->
+                    <img src="img/TP PMIW - Diagrama - Carancini Valentina, Choquetopa Carla.drawio.png"
+                      class="card-img-top">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                final #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Te ocultás en el armario esperando que Medusa no te note, pero ella te
+                encuentra. Su mirada te alcanza y quedás convertido en piedra.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                final #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Usás el espejo para enfrentar a Medusa. Ella se petrifica al verse, pero el
+                hechizo también te afecta y terminás convertido en piedra.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                final #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Elegís huir por el pasadizo oculto, rompés las maderas y corrés hacia la salida. Llegás al exterior y
+                escapás del bosque.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- JUEGO -->
+    <div class="row" id="Juego">
+      <div class="col-md-8 col-sm-12 g-4">
+        <div class="card">
+          <img src="img/inicio_juego.png" class="card-img-top" alt="aventura gra">
+          <div class="card-body">
+            <h2 class="card-title"> juego</h2>
+            <p class="card-text">
+              Nuestro juego es una aventura interactiva donde el jugador controla a un personaje que debe moverse por un
+              laberinto mientras intenta escapar de Medusa, la criatura principal del juego. </p>
+
+            <!-- BOTÓN IR A -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalJuego">
+              Jugar
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalJuego" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">JUEGO</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- JUGAR JUEGO -->
+                    <iframe id="iframeJuego" src="juego/index.html" frameborder="0" width="100%" height="100%"></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 g-4">
+        <div class="card">
+          <img src="img/juego.png" class="card-img-top" alt="diagrama">
+          <div class="card-body">
+            <h5 class="card-title">instrucciones</h5>
+            <p class="card-text">Movés al personaje con WASD: </p>
+            <p>W: arriba</p>
+            <p>A: izquierda</p>
+            <p>S: abajo</p>
+            <p>D: derecha</p>
+
+            COMO SE JUEGA:
+            Recorre el pasadizo evitando que medusa te atrape y recogé todos los fragmentos del espejo que se encuentran
+            alrededor del pasadizo antes de que Medusa te atrape. Una vez que juntás todos,ganas.
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 g-5" style="font-family: 'CreditValley';">
+          <h4>TITULO</h4>
+          <p>“Ojos de Piedra” nace de la idea central que define el mito de Medusa: una mirada capaz de convertir a
+            cualquier ser vivo en estatua. El título refleja ese poder petrificador que permanece oculto en el bosque y
+            que marca el destino de quienes se atreven a entrar en su templo.</p>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  integrantes
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>CARANCINI VALENTINA</p>
+                  <p>CHOQUETOPA CARLA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+      <script>
+        // PARA QUE SE PUEDAN ABRIR LOS DOS ARCHIVOS P5 EN UNA MISMA PÁGINA
+
+        document.getElementById('modalAventura').addEventListener('hidden.bs.modal', function () {
+          document.getElementById('iframeAventura').src = 'about:blank';
+        });
+
+        document.getElementById('modalJuego').addEventListener('hidden.bs.modal', function () {
+          document.getElementById('iframeJuego').src = 'about:blank';
+        });
+
+        document.getElementById('modalDiagrama').addEventListener('hidden.bs.modal', function () {
+          document.getElementById('iframeDiagrama').src = 'about:blank';
+        });
+
+        // Recargar el src cuando se abren
+        document.getElementById('modalAventura').addEventListener('show.bs.modal', function () {
+          document.getElementById('iframeAventura').src = 'aventura-grafica/index.html';
+        });
+
+        document.getElementById('modalJuego').addEventListener('show.bs.modal', function () {
+          document.getElementById('iframeJuego').src = 'juego/index.html';
+        });
+
+        document.getElementById('modalDiagrama').addEventListener('show.bs.modal', function () {
+          document.getElementById('iframeDiagrama').src = 'aventura-grafica/TP PMIW - Diagrama - Carancini Valentina, Choquetopa Carla.drawio.pdf';
+        });
+      </script>
+</body>
+
+</html>
